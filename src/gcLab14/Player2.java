@@ -6,16 +6,17 @@ public class Player2 extends Player {
 
 	private Roshambo throwVal;
 
-	public Player2() {
+	public Player2() { // constructor
 	}
-	public void setName(String name) {
+	
+	public void setName(String name) { //called to set the opponent's name
 		this.name = name;
 	}
-	public String getName() {
+	public String getName() {  //called when need name of opponent
 		return name;
 	}
 
-	public Roshambo generateRoshambo() {
+	public Roshambo generateRoshambo() { // generates a random throw
 		Random rand = new Random();
 		int val = rand.nextInt(2);
 		if (val == 0) {
